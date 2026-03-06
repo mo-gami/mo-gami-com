@@ -1506,7 +1506,6 @@ Version: 1.0
                 color: #3D3937;
             }
 
-            pre.wp-block-preformatted .profile,
             .entry-content .profile {
                 padding-top: 0px;
                 padding-bottom: 10px;
@@ -1832,7 +1831,7 @@ body.home {
 
 .btn-submit {
     display: inline;
-    background: url('/wp-content/themes/mogami/img/icon-search2.png') no-repeat center center;
+    background: url('/wp-content/themes/mogami/backup/img/icon-search2.png') no-repeat center center;
     border: none;
     text-indent: -9999px;
     box-shadow: none;
@@ -1858,19 +1857,12 @@ body.home {
 }
 
 /* --- ページネーション・レイアウト（元のデザイン） --- */
-@media screen and (min-width: 1025px) {
-    /* 通常の検索結果がある時は左右に分ける */
-    .page .searchbox-wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-
-    /* 結果がない(is-nosearch)時は右寄せにする */
-    .page .searchbox-wrapper.is-nosearch {
-        justify-content: flex-end !important;
-    }
+.page .searchbox-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
 }
 
 .page .custom-nav-inline {
@@ -1878,16 +1870,14 @@ body.home {
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
-    gap: 10px;
-    font-size: 1.1em;
-    color: #3D3937;
+    gap: 8px;
 }
 
 .page #pagination-top-links { padding-left: 14px; }
 .page .bottom-nav { margin: 20px 0 10px 0; }
-.page .clickable-link { text-decoration: underline !important;}
-/* .page .clickable-link.nav-arrow { color: #333; } */
-/* .page .page-number.current { font-weight: bold; color: #333; } */
+.page .clickable-link { text-decoration: underline !important; color: #888; cursor: pointer; }
+.page .clickable-link.nav-arrow { color: #333; }
+.page .page-number.current { font-weight: bold; color: #333; }
 .page .searchform { margin: 0 !important; }
 .page .post-header { padding: 0px 54px 20px 7px; }
 
@@ -1941,18 +1931,84 @@ p#breadcrumbs span a  {
     list-style: none !important;
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
     margin: 0;
     text-indent: 0 !important;
-    padding-left: 10px;
-    font-size: 1.1em;
-    color: #3D3937;
 }
 
 .page_navi li {
     list-style: none !important;
-    margin-right: 15px;
+    margin-right: 10px;
+    margin-bottom: 5px;
 }
 
 .page_navi li a {
     text-decoration: underline;
 }
+
+/* navigation */
+
+    .navigation {
+        float: left;
+        overflow: hidden;
+        padding: 0px 50px 0px 0px;
+        font-size: 12px;
+        width: auto;
+        height: auto;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        background-color: aquamarine;
+        background-color: white;
+    }
+
+        .prev {
+            float: left;
+            width: auto;
+            text-align: left;
+            font-size: 14px;
+            margin-right: 5px;
+            text-decoration: underline;
+            background-color:  #ccc;
+            background-color: white;
+        }
+
+        .next {
+            float: right;
+            width: auto;
+            text-align: right;
+            font-size: 14px;
+            margin-right: 8px;
+            text-decoration: underline;
+            background-color:  #ccc;
+            background-color: white;
+        } 
+
+        .prev2 {
+  
+            width: auto;
+            font-size: 14px;
+            margin-right: 5px;
+            text-decoration: underline;
+            background-color:  #ccc;
+            background-color: white;
+        }
+
+        .next2 {
+      
+            width: auto;
+      
+            font-size: 14px;
+            margin: 0px 8px 0px 0px;
+            text-decoration: underline;
+            background-color:  #ccc;
+            background-color: white;
+        } 
+
+        /* パンくずを横並びに */
+        ul.page_navi {
+            list-style: none;
+            line-height: 20px; 
+            display: flex;
+            text-align: left;
+            width: auto;
+            margin: 0 0 5px 5px;
+        }

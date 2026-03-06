@@ -1506,7 +1506,6 @@ Version: 1.0
                 color: #3D3937;
             }
 
-            pre.wp-block-preformatted .profile,
             .entry-content .profile {
                 padding-top: 0px;
                 padding-bottom: 10px;
@@ -1832,7 +1831,7 @@ body.home {
 
 .btn-submit {
     display: inline;
-    background: url('/wp-content/themes/mogami/img/icon-search2.png') no-repeat center center;
+    background: url('/wp-content/themes/mogami/backup/img/icon-search2.png') no-repeat center center;
     border: none;
     text-indent: -9999px;
     box-shadow: none;
@@ -1858,22 +1857,20 @@ body.home {
 }
 
 /* --- ページネーション・レイアウト（元のデザイン） --- */
+/* PCサイズ(1025px以上)のときだけ横並びを維持するよう制限 */
 @media screen and (min-width: 1025px) {
-    /* 通常の検索結果がある時は左右に分ける */
-    .page .searchbox-wrapper {
-        display: flex;
-        justify-content: space-between;
+    .page .searchbox-wrapper,
+    .search .searchbox-wrapper {
+        /* display: flex; */
+        /* justify-content: space-between; */
         align-items: center;
         width: 100%;
-    }
-
-    /* 結果がない(is-nosearch)時は右寄せにする */
-    .page .searchbox-wrapper.is-nosearch {
-        justify-content: flex-end !important;
+        margin-bottom: 40px;
     }
 }
 
-.page .custom-nav-inline {
+.page .custom-nav-inline,
+.search .custom-nav-inline {
     display: flex;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -1883,13 +1880,13 @@ body.home {
     color: #3D3937;
 }
 
-.page #pagination-top-links { padding-left: 14px; }
-.page .bottom-nav { margin: 20px 0 10px 0; }
-.page .clickable-link { text-decoration: underline !important;}
+.page #pagination-top-links, .search #pagination-top-links { padding-left: 14px; }
+.page .bottom-nav, .search .bottom-nav { margin: 20px 0 10px 0; }
+.page .clickable-link, .search .clickable-link { text-decoration: underline !important;}
 /* .page .clickable-link.nav-arrow { color: #333; } */
 /* .page .page-number.current { font-weight: bold; color: #333; } */
-.page .searchform { margin: 0 !important; }
-.page .post-header { padding: 0px 54px 20px 7px; }
+.page .searchform, .search .searchform { margin: 0 !important; }
+.page .post-header, .search .post-header { padding: 0px 54px 20px 7px; }
 
 /* --- 検索結果表示用の追加設定 --- */
 #search-results-container {
@@ -1923,15 +1920,12 @@ body.home {
 
 p#breadcrumbs {
     padding-bottom: 15px;
-    /* color: #3D3937;
-    color: #C0C0C0; */
     color: #ffffff;
     cursor: pointer;
     font-size: 12px;
 }
 
-p#breadcrumbs span a  {
-    /* color: #C0C0C0; */
+p#breadcrumbs span a {
     color: #ffffff;
     cursor: pointer;
 }

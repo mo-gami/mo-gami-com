@@ -42,9 +42,9 @@
         <link rel="alternate" href="/en/" hreflang="en">
         <link rel="shortcut icon" href="/gitoqed/2023/08/icon-e1690992479203.jpg">
 
-        <link rel="stylesheet" href="/wp-content/themes/mogami/mobile.css?ver=1772735919" type="text/css" media="screen and (max-width:599px)">
-        <link rel="stylesheet" href="/wp-content/themes/mogami/tablet.css?ver=1772735397" type="text/css" media="screen and (min-width:600px) and (max-width:1024px)">
-        <link rel="stylesheet" href="/wp-content/themes/mogami/style.css?ver=1772749194" type="text/css" media="screen and (min-width:1025px)">
+        <link rel="stylesheet" href="/wp-content/themes/mogami/mobile.css?ver=1772826290" type="text/css" media="screen and (max-width:599px)">
+        <link rel="stylesheet" href="/wp-content/themes/mogami/tablet.css?ver=1772836598" type="text/css" media="screen and (min-width:600px) and (max-width:1024px)">
+        <link rel="stylesheet" href="/wp-content/themes/mogami/style.css?ver=1772836497" type="text/css" media="screen and (min-width:1025px)">
         <link rel="stylesheet" href="/wp-content/themes/mogami/menu.css?ver=1701262655" type="text/css" media="screen and (max-width:1024px)">
 
         <meta name="robots" content="noindex, follow">
@@ -203,21 +203,27 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                     <img src="/wp-content/themes/mogami/img/font-mogami.svg" alt="mogami">
                 </a>
             </h1>
-        </header>        <div id="main" class="container">
-            <div id="posts">
-
-                        
-                <div class="post">
-                    <div class="post-header">
-                    </div>
+        </header>
+<div id="main" class="container">
+    <div id="posts">
+                                    <article class="post-74 post type-post status-publish format-image hentry category-papercrafts post_format-post-format-image ja">
+                    <header class="post-header">
+                        <h2><a href="/crystal/">クリスタル</a></h2>
+                        <div class="post-meta">
+                            2021.06.26                        </div>
+                    </header>
 
                     <div class="post-content">
-                    </div>  
-                </div><!-- /post-->
-                
-                
-            </div><!-- /posts -->
-            <div id="sidebar">
+                        <p>templates / imagesDOWNLOAD クリスタル 3Dモデリングソフトの操作練習の一環で設計したものです。 モデルデータ モデルサイズ: 幅 – 89 mm, 高さ – 100 m […]</p>
+                    </div>
+                </article>
+            
+            <div class="pagination">
+                            </div>
+
+            </div>
+
+    <div id="sidebar">
           <h1>
 
                         <input type="checkbox" class="check clearText" id="checked">
@@ -309,6 +315,167 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
 <div class="line">
 
-</div>        </div><!-- /main -->
+</div></div>
 
-</body></html>
+<style type="text/css">
+    /* 1. ポップアップ全体の背景（クリック可能にする） */
+    #custom-lightbox-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(2px);
+        z-index: 999999;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer; /* 背景がクリックできることを示す */
+    }
+
+    /* 2. 画像と×ボタンを包むコンテナ */
+    .lightbox-content-wrapper {
+        position: relative;
+        display: inline-block;
+        max-width: 95%;
+        max-height: 95vh;
+        cursor: default; /* 画像の上では通常のカーソルに戻す */
+    }
+
+    /* 3. 画像の設定 */
+    #custom-lightbox-overlay img {
+        display: block;
+        max-width: 100%;
+        max-height: 90vh;
+        width: auto;
+        height: auto;
+        box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        background: #fff;
+    }
+
+    /* 4. ×ボタン：画像の内側・右上に配置 */
+    #custom-lightbox-close {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        color: #515151;
+        font-size: 50px;
+        font-family: Arial, sans-serif;
+        line-height: 1;
+        cursor: pointer;
+        user-select: none;
+        z-index: 1000001;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff; 
+    }
+
+    #custom-lightbox-close:hover {
+        opacity: 0.6;
+    }
+
+    /* --- スマホ用の修正 (600px以下) --- */
+    @media screen and (max-width: 600px) {
+        #custom-lightbox-close {
+            font-size: 45px;
+            right: 5px;
+        }
+    }
+</style>
+
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+    // A. 構造を作成
+    if ($('#custom-lightbox-overlay').length === 0) {
+        $('body').append('<div id="custom-lightbox-overlay"><div class="lightbox-content-wrapper"><span id="custom-lightbox-close">×</span><img src="" /></div></div>');
+    }
+
+    var $overlay = $('#custom-lightbox-overlay');
+    var $wrapper = $('.lightbox-content-wrapper');
+    var $overlayImg = $overlay.find('img');
+
+    // B. 画像クリックで開く
+    $('.thumbnail2 img').css('cursor', 'pointer').on('click', function(e) {
+        e.preventDefault();
+        var src = $(this).attr('src');
+        $overlayImg.attr('src', src);
+        $overlay.css('display', 'flex').hide().fadeIn(300);
+        $('body').css('overflow', 'hidden');
+    });
+
+    // C. 閉じる処理（×ボタン または 背景 をクリック）
+    $overlay.on('click', function(e) {
+        // クリックされたのが「画像そのもの」でなければ閉じる
+        if (!$(e.target).closest('img').length) {
+            $overlay.fadeOut(300, function() {
+                $('body').css('overflow', '');
+            });
+        }
+    });
+
+    // D. Escキーでも閉じられるようにする
+    $(document).on('keydown', function(e) {
+        if (e.keyCode === 27 && $overlay.is(':visible')) {
+            $overlay.fadeOut(300);
+            $('body').css('overflow', '');
+        }
+    });
+});
+</script>
+
+    <!-- topへ戻る -->
+    <p id="page-top"><a href="#"></a></p>
+        <script>
+            jQuery(function() {
+                var topBtn = jQuery('#page-top');    
+                topBtn.hide();
+                //スクロールが100に達したらボタン表示
+                jQuery(window).scroll(function () {
+                    if (jQuery(this).scrollTop() > 200) {
+                        topBtn.fadeIn();
+                    } else {
+                        topBtn.fadeOut();
+                    }
+                });
+                //スクロールしてトップ
+                topBtn.click(function () {
+                    jQuery('body,html').animate({
+                        scrollTop: 0
+                    }, 500);
+                    return false;
+                });
+            });
+    </script>
+    <style>
+            /* トップへ戻るボタン */
+            #page-top a {
+                display: flex;           /* Flexboxで中央寄せ */
+                justify-content: center; /* 水平方向中央 */
+                align-items: center;     /* 垂直方向中央 */
+                width: 40px;
+                height: 38px;
+                position: fixed;
+                right: 10px;
+                bottom: 10px;
+                background: rgb(170, 170, 170);
+                opacity: .6;
+                overflow: hidden;
+                z-index: 999999;
+                border-radius: 5px;
+                text-decoration: none;   /* リンクの下線を消す */
+            }
+
+            #page-top a::before {
+                content: '▲';
+                font-size: 20px;
+                color: #fff;
+                
+                /* Flexboxで中央寄せするため、margin-topでの微調整は不要になる場合が多いです。
+                もし元のフォントのせいで上にずれて見える場合は、ここを 1px 単位で調整してください。 */
+                margin-top: 0; 
+                
+                /* ★修正点：潰す設定を削除し、元の大きさに戻す */
+                transform: scale(0.6);
+                
+                line-height: 1;
+            }
+    </style></body></html>

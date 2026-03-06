@@ -42,9 +42,9 @@
         <link rel="alternate" href="/en/" hreflang="en">
         <link rel="shortcut icon" href="/gitoqed/2023/08/icon-e1690992479203.jpg">
 
-        <link rel="stylesheet" href="/wp-content/themes/mogami/mobile.css?ver=1772735919" type="text/css" media="screen and (max-width:599px)">
-        <link rel="stylesheet" href="/wp-content/themes/mogami/tablet.css?ver=1772735397" type="text/css" media="screen and (min-width:600px) and (max-width:1024px)">
-        <link rel="stylesheet" href="/wp-content/themes/mogami/style.css?ver=1772749194" type="text/css" media="screen and (min-width:1025px)">
+        <link rel="stylesheet" href="/wp-content/themes/mogami/mobile.css?ver=1772826290" type="text/css" media="screen and (max-width:599px)">
+        <link rel="stylesheet" href="/wp-content/themes/mogami/tablet.css?ver=1772836598" type="text/css" media="screen and (min-width:600px) and (max-width:1024px)">
+        <link rel="stylesheet" href="/wp-content/themes/mogami/style.css?ver=1772836497" type="text/css" media="screen and (min-width:1025px)">
         <link rel="stylesheet" href="/wp-content/themes/mogami/menu.css?ver=1701262655" type="text/css" media="screen and (max-width:1024px)">
 
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -342,23 +342,22 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
 </div>                    <section class="post">
                 <div class="post-header">
-                                            <ul class="page_navi" style="list-style:none; display:flex; text-indent:0 !important; padding:0; flex-wrap:wrap;">
+                                            <ul class="page_navi">
+                                                            <li class="nav-first"><a href="/sfp5/">&lt;&lt;</a></li>
+                                <li class="nav-prev"><a href="/dm/">&lt;</a></li>
                             
-                                                            <li class="prev2" style="margin-right:10px; list-style:none;"><a href="/sfp5/"></a></li>
-                                <li class="prev2" style="margin-right:10px; list-style:none;"><a href="/dm/"></a></li>
-                            
-                                                            <li class="prev2" style="margin-right:10px; list-style:none;">
+                                                            <li class="nav-number">
                                                                             <a href="/dm/">31</a>
                                                                     </li>
-                                                            <li class="prev2" style="margin-right:10px; list-style:none;">
-                                                                            <span class="current" style="font-weight:bold; color:#333; border-bottom:2px solid #333;">32</span>
+                                                            <li class="nav-number">
+                                                                            <span class="current">32</span>
                                                                     </li>
-                                                            <li class="prev2" style="margin-right:10px; list-style:none;">
+                                                            <li class="nav-number">
                                                                             <a href="/mps/">33</a>
                                                                     </li>
                             
-                                                            <li class="next2" style="margin-right:10px; list-style:none;"><a href="/mps/">&gt;</a></li>
-                                <li class="next2" style="list-style:none;"><a href="/fs/">&gt;&gt;</a></li>
+                                                            <li class="nav-next"><a href="/mps/">&gt;</a></li>
+                                <li class="nav-last"><a href="/fs/">&gt;&gt;</a></li>
                                                     </ul>
                                     </div>
 
@@ -519,33 +518,36 @@ jQuery(document).ready(function($) {
             });
     </script>
     <style>
-        /* トップへ戻るボタン */
-        #page-top a {
-            width: 40px;
-            height: 38px;
-            position: fixed;
-            right: 10px;
-            bottom: 10px;
-            background: rgb(170, 170, 170);
-            opacity: .6;
-            overflow: hidden;
-            z-index: 999999;
-            border-radius: 5px;
-        }
-        #page-top a::before {
-            content: '▲';
-            font-size: 20px;
-            transform: scale(0.8,0.6);
-            color: #fff; 
-            position: absolute;
-            width: 25px;
-            height: 25px;
-            top: 0;
-            bottom: 0px;
-            right: 0px;
-            left: 0;
-            margin: auto;
-            text-align: center;
-            z-index: 999999;
-        }
+            /* トップへ戻るボタン */
+            #page-top a {
+                display: flex;           /* Flexboxで中央寄せ */
+                justify-content: center; /* 水平方向中央 */
+                align-items: center;     /* 垂直方向中央 */
+                width: 40px;
+                height: 38px;
+                position: fixed;
+                right: 10px;
+                bottom: 10px;
+                background: rgb(170, 170, 170);
+                opacity: .6;
+                overflow: hidden;
+                z-index: 999999;
+                border-radius: 5px;
+                text-decoration: none;   /* リンクの下線を消す */
+            }
+
+            #page-top a::before {
+                content: '▲';
+                font-size: 20px;
+                color: #fff;
+                
+                /* Flexboxで中央寄せするため、margin-topでの微調整は不要になる場合が多いです。
+                もし元のフォントのせいで上にずれて見える場合は、ここを 1px 単位で調整してください。 */
+                margin-top: 0; 
+                
+                /* ★修正点：潰す設定を削除し、元の大きさに戻す */
+                transform: scale(0.6);
+                
+                line-height: 1;
+            }
     </style></body></html>

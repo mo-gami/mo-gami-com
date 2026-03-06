@@ -1823,11 +1823,12 @@ body.home {
     height: 50px;
     box-shadow: none;
     font-family: Arial, Helvetica, sans-serif;
+    /* overflow: hidden; */ /* 入力が見えなくなる場合があるため調整 */
 }
 
 input.btn-submit {
     display: inline;
-    background: url('/wp-content/themes/mogami/img/icon-search2.png') no-repeat center center;
+    background: url('/wp-content/themes/mogami/backup/img/icon-search2.png') no-repeat center center;
     border: none;
     text-indent: -9999px;
     box-shadow: none;
@@ -1845,15 +1846,47 @@ input.btn-submit {
 .searchbox div {
     display: inline-block;
     border: #CCC solid 1px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
     border-radius: 14px;
     width: 204px;
     overflow: hidden;
 }
 
+/* --- (中略: nosearch設定) --- */
+
 /* -----------------------------------------------------------
-   2. 固定ページ：レイアウト設定
+   2. 固定ページ：PC用設定（共通レイアウト含む）
 ----------------------------------------------------------- */
-.page .searchbox-wrapper, .search .searchbox-wrapper {
+.page .searchbox-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.page .custom-nav-inline {
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    gap: 8px;
+}
+
+.page #pagination-top-links { padding-left: 14px; }
+.page .bottom-nav { margin: 0px 0 10px 0; }
+.page .clickable-link { text-decoration: underline !important; color: #888; cursor: pointer; }
+.page .clickable-link.nav-arrow { color: #333; }
+.page .page-number.current { font-weight: bold; color: #333; }
+.page .searchform { margin: 0 !important; }
+.page .post-header { 
+    /* padding: 0px 54px 20px 7px; */
+}
+
+/* -----------------------------------------------------------
+   3. タブレット・スマホ設定 (1024px以下)
+----------------------------------------------------------- */
+.page .searchbox-wrapper {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
@@ -1862,79 +1895,75 @@ input.btn-submit {
     float: none !important;
 }
 
-.page .custom-nav-inline, .search .custom-nav-inline {
-    display: flex;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    gap: 10px;
-    font-size: 1.1em;
-    color: #3D3937;
-}
-
-.page #pagination-top-links, .search #pagination-top-links { 
-    order: 2;
-    padding-left: 0 !important;
-    display: flex !important;
-    justify-content: center !important;
-    width: 100% !important;
-}
-
-.page .bottom-nav, .search .bottom-nav { 
-    display: flex !important;
-    justify-content: center !important;
-    width: 100% !important;
-    margin: 20px 0 !important; 
-}
-
-.page .clickable-link, .search .clickable-link { text-decoration: underline !important;}
-/* .page .clickable-link.nav-arrow { color: #333; } */
-/* .page .page-number.current { font-weight: bold; color: #333; } */
-
-.page .searchbox, .search .searchbox {
-    order: 1;
+.page .searchbox {
+    order: 1; /* 検索窓を上に */
     float: none !important;
     text-align: center !important; 
     width: 100% !important;
     display: block !important;
 }
 
-.page .searchform, .search .searchform {
+.page .searchform {
     display: inline-block !important;
     margin: 0 auto !important;
 }
 
-.page .searchform div, .search .searchform div {
+.page .searchform div {
     display: flex !important;
     justify-content: center;
     align-items: center;
 }
 
-.page #s, .search #s {
+.page #s {
     width: 200px !important;
     max-width: 60vw;
     padding: 6px 6px !important;
 }
 
+.page #pagination-top-links {
+    order: 2; /* ページネーションを下に */
+    padding-left: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+}
+
+.page .bottom-nav {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin: 20px 0 !important;
+}
+
 /* -----------------------------------------------------------
    4. 追加：スマホ用 検索結果表示（縦並び）設定
 ----------------------------------------------------------- */
+
+/* 検索時にグリッドを隠し、縦並びコンテナを表示 */
 #search-results-container {
     display: none; 
     width: 100%;
     padding: 0 10px;
 }
 
-.is-searching #paginate-target { display: none !important; }
-.is-searching #search-results-container { display: block !important; }
+.is-searching #paginate-target { 
+    display: none !important; 
+}
 
+.is-searching #search-results-container { 
+    display: block !important; 
+}
+
+/* スマホでの検索結果アイテム（縦並び）の余白調整 */
 .search-result-item {
     border-bottom: 1px solid #eee;
     padding-bottom: 30px;
     margin-bottom: 30px;
     line-height: 1.6;
-    text-align: center;
+    text-align: center; /* スマホでは中央寄せが綺麗です */
 }
 
+/* スマホでは確実に1カラムにする */
 .search-result-item .wp-block-column {
     flex-basis: 100% !important;
     max-width: 100% !important;
@@ -1942,6 +1971,7 @@ input.btn-submit {
     margin-right: 0 !important;
 }
 
+/* スマホ用検索バー（結果表示時の「Close」など） */
 .search-info-bar {
     font-size: 14px;
     margin: 10px 0 20px 0;
@@ -1950,34 +1980,4 @@ input.btn-submit {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-/* -----------------------------------------------------------
-   5. ナビゲーション全体のコンテナ
------------------------------------------------------------ */
-.page_navi {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0 0 20px 0;
-    text-indent: 0 !important;
-    justify-content: center;
-    font-size: 1.1em;
-    color: #3D3937;
-}
-
-.page_navi li {
-    list-style: none;
-    margin-right: 15px;
-}
-
-.page_navi li a {
-    text-decoration: underline;
-}
-
-#breadcrumbs {
-    margin-top: 30px;
-    font-size: 0.9em;
-    color: #666;
 }

@@ -42,22 +42,22 @@
         <link rel="alternate" href="/en/en/" hreflang="en">
         <link rel="shortcut icon" href="/en/gitoqed/2023/08/icon-e1690992479203.jpg">
 
-        <link rel="stylesheet" href="/wp-content/themes/mogami/mobile.css?ver=1772735919" type="text/css" media="screen and (max-width:599px)">
-        <link rel="stylesheet" href="/wp-content/themes/mogami/tablet.css?ver=1772735397" type="text/css" media="screen and (min-width:600px) and (max-width:1024px)">
-        <link rel="stylesheet" href="/wp-content/themes/mogami/style.css?ver=1772749194" type="text/css" media="screen and (min-width:1025px)">
+        <link rel="stylesheet" href="/wp-content/themes/mogami/mobile.css?ver=1772826290" type="text/css" media="screen and (max-width:599px)">
+        <link rel="stylesheet" href="/wp-content/themes/mogami/tablet.css?ver=1772836598" type="text/css" media="screen and (min-width:600px) and (max-width:1024px)">
+        <link rel="stylesheet" href="/wp-content/themes/mogami/style.css?ver=1772836497" type="text/css" media="screen and (min-width:1025px)">
         <link rel="stylesheet" href="/wp-content/themes/mogami/menu.css?ver=1701262655" type="text/css" media="screen and (max-width:1024px)">
 
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
 	<!-- This site is optimized with the Yoast SEO plugin v27.1.1 - https://yoast.com/product/yoast-seo-wordpress/ -->
-	<title>online shops | mogami | ペーパークラフト設計</title>
+	<title>Online Shops | mogami | ペーパークラフト設計</title>
 	<meta property="og:locale" content="en_US">
 	<meta property="og:type" content="article">
-	<meta property="og:title" content="online shops | mogami | ペーパークラフト設計">
+	<meta property="og:title" content="Online Shops | mogami | ペーパークラフト設計">
 	<meta property="og:description" content="Below are links to the official mogami online shop. I sell papercrafts available only in these shops as digital products in template PDF files. STORES: https://mo-gami.stores.jp Purchasing at STORES You can purchase as a guest without registering as a member. When making a purchase, you will first be asked to enter your billing address and […]">
 	<meta property="og:url" content="/en/online-shops/">
 	<meta property="og:site_name" content="mogami | ペーパークラフト設計">
-	<meta property="article:modified_time" content="2023-11-30T19:41:43+00:00">
+	<meta property="article:modified_time" content="2026-03-06T22:12:36+00:00">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:label1" content="Est. reading time">
 	<meta name="twitter:data1" content="1 minute">
@@ -68,12 +68,12 @@
 	            "@type": "WebPage",
 	            "@id": "/en/online-shops/",
 	            "url": "/en/online-shops/",
-	            "name": "online shops | mogami | ペーパークラフト設計",
+	            "name": "Online Shops | mogami | ペーパークラフト設計",
 	            "isPartOf": {
 	                "@id": "/#website"
 	            },
 	            "datePublished": "2023-11-29T16:13:23+00:00",
-	            "dateModified": "2023-11-30T19:41:43+00:00",
+	            "dateModified": "2026-03-06T22:12:36+00:00",
 	            "breadcrumb": {
 	                "@id": "/en/online-shops/#breadcrumb"
 	            },
@@ -100,7 +100,7 @@
 	                {
 	                    "@type": "ListItem",
 	                    "position": 2,
-	                    "name": "online shops"
+	                    "name": "Online Shops"
 	                }
 	            ]
 	        },
@@ -266,7 +266,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <p></p></code>
                     
                                         
-                    <p id="breadcrumbs"><span><span><a href="/en/">mogami</a></span> &gt; <span class="breadcrumb_last" aria-current="page">online shops</span></span></p>                </pre></div> 
+                    <p id="breadcrumbs"><span><span><a href="/en/">mogami</a></span> &gt; <span class="breadcrumb_last" aria-current="page">Online Shops</span></span></p>                </pre></div> 
             </div>                
                       
     </section>
@@ -493,33 +493,36 @@ jQuery(document).ready(function($) {
             });
     </script>
     <style>
-        /* トップへ戻るボタン */
-        #page-top a {
-            width: 40px;
-            height: 38px;
-            position: fixed;
-            right: 10px;
-            bottom: 10px;
-            background: rgb(170, 170, 170);
-            opacity: .6;
-            overflow: hidden;
-            z-index: 999999;
-            border-radius: 5px;
-        }
-        #page-top a::before {
-            content: '▲';
-            font-size: 20px;
-            transform: scale(0.8,0.6);
-            color: #fff; 
-            position: absolute;
-            width: 25px;
-            height: 25px;
-            top: 0;
-            bottom: 0px;
-            right: 0px;
-            left: 0;
-            margin: auto;
-            text-align: center;
-            z-index: 999999;
-        }
+            /* トップへ戻るボタン */
+            #page-top a {
+                display: flex;           /* Flexboxで中央寄せ */
+                justify-content: center; /* 水平方向中央 */
+                align-items: center;     /* 垂直方向中央 */
+                width: 40px;
+                height: 38px;
+                position: fixed;
+                right: 10px;
+                bottom: 10px;
+                background: rgb(170, 170, 170);
+                opacity: .6;
+                overflow: hidden;
+                z-index: 999999;
+                border-radius: 5px;
+                text-decoration: none;   /* リンクの下線を消す */
+            }
+
+            #page-top a::before {
+                content: '▲';
+                font-size: 20px;
+                color: #fff;
+                
+                /* Flexboxで中央寄せするため、margin-topでの微調整は不要になる場合が多いです。
+                もし元のフォントのせいで上にずれて見える場合は、ここを 1px 単位で調整してください。 */
+                margin-top: 0; 
+                
+                /* ★修正点：潰す設定を削除し、元の大きさに戻す */
+                transform: scale(0.6);
+                
+                line-height: 1;
+            }
     </style></body></html>
