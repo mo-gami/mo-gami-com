@@ -1828,7 +1828,7 @@ body.home {
 
 input.btn-submit {
     display: inline;
-    background: url('/wp-content/themes/mogami/img/icon-search2.png') no-repeat center center;
+    background: url('https://mo-gami.com/wp-content/themes/mogami/img/icon-search2.png') no-repeat center center;
     border: none;
     text-indent: -9999px;
     box-shadow: none;

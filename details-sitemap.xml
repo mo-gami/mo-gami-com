@@ -1,507 +1,507 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/main-sitemap.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://mo-gami.com/main-sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>/details/</loc>
+		<loc>https://mo-gami.com/details/</loc>
 		<lastmod>2026-03-01T15:21:37+00:00</lastmod>
 	</url>
 	<url>
-		<loc>/en/sfp5/</loc>
+		<loc>https://mo-gami.com/en/sfp5/</loc>
 		<lastmod>2026-03-01T12:30:14+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/sfp4/</loc>
+		<loc>https://mo-gami.com/sfp4/</loc>
 		<lastmod>2026-03-01T12:38:59+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/sfp5/</loc>
+		<loc>https://mo-gami.com/sfp5/</loc>
 		<lastmod>2026-03-01T12:39:43+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/sfp4/</loc>
+		<loc>https://mo-gami.com/en/sfp4/</loc>
 		<lastmod>2026-03-01T12:43:18+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/sfp3/</loc>
+		<loc>https://mo-gami.com/en/sfp3/</loc>
 		<lastmod>2026-03-01T12:50:08+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/sfp3/</loc>
+		<loc>https://mo-gami.com/sfp3/</loc>
 		<lastmod>2026-03-01T12:51:09+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/sfp2/</loc>
+		<loc>https://mo-gami.com/en/sfp2/</loc>
 		<lastmod>2026-03-01T12:53:35+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/sfp2/</loc>
+		<loc>https://mo-gami.com/sfp2/</loc>
 		<lastmod>2026-03-01T12:54:05+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/sfp1/</loc>
+		<loc>https://mo-gami.com/en/sfp1/</loc>
 		<lastmod>2026-03-01T12:56:20+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/sfp1/</loc>
+		<loc>https://mo-gami.com/sfp1/</loc>
 		<lastmod>2026-03-01T12:56:56+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/mp1/</loc>
+		<loc>https://mo-gami.com/en/mp1/</loc>
 		<lastmod>2026-03-01T13:00:34+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/mp1/</loc>
+		<loc>https://mo-gami.com/mp1/</loc>
 		<lastmod>2026-03-01T13:01:43+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/sgp1/</loc>
+		<loc>https://mo-gami.com/en/sgp1/</loc>
 		<lastmod>2026-03-01T13:17:06+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/sgp1/</loc>
+		<loc>https://mo-gami.com/sgp1/</loc>
 		<lastmod>2026-03-01T13:19:34+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/gp1/</loc>
+		<loc>https://mo-gami.com/en/gp1/</loc>
 		<lastmod>2026-03-01T13:35:06+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/gp1/</loc>
+		<loc>https://mo-gami.com/gp1/</loc>
 		<lastmod>2026-03-01T13:36:21+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/gp2/</loc>
+		<loc>https://mo-gami.com/en/gp2/</loc>
 		<lastmod>2026-03-01T13:42:00+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/gp2/</loc>
+		<loc>https://mo-gami.com/gp2/</loc>
 		<lastmod>2026-03-01T13:42:55+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/gp3/</loc>
+		<loc>https://mo-gami.com/en/gp3/</loc>
 		<lastmod>2026-03-01T13:44:19+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/gp3/</loc>
+		<loc>https://mo-gami.com/gp3/</loc>
 		<lastmod>2026-03-01T13:44:51+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/ip/</loc>
+		<loc>https://mo-gami.com/en/ip/</loc>
 		<lastmod>2026-03-01T13:45:49+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/ip/</loc>
+		<loc>https://mo-gami.com/ip/</loc>
 		<lastmod>2026-03-01T13:46:24+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/ms/</loc>
+		<loc>https://mo-gami.com/en/ms/</loc>
 		<lastmod>2026-03-01T13:49:09+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/ms/</loc>
+		<loc>https://mo-gami.com/ms/</loc>
 		<lastmod>2026-03-01T13:49:36+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/wg/</loc>
+		<loc>https://mo-gami.com/en/wg/</loc>
 		<lastmod>2026-03-01T13:51:14+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/wg/</loc>
+		<loc>https://mo-gami.com/wg/</loc>
 		<lastmod>2026-03-01T13:51:39+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/pc/</loc>
+		<loc>https://mo-gami.com/en/pc/</loc>
 		<lastmod>2026-03-01T13:54:40+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/pc/</loc>
+		<loc>https://mo-gami.com/pc/</loc>
 		<lastmod>2026-03-01T13:59:02+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/c30/</loc>
+		<loc>https://mo-gami.com/en/c30/</loc>
 		<lastmod>2026-03-01T14:06:33+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/c30/</loc>
+		<loc>https://mo-gami.com/c30/</loc>
 		<lastmod>2026-03-01T14:07:27+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/s/</loc>
+		<loc>https://mo-gami.com/en/s/</loc>
 		<lastmod>2026-03-01T14:08:58+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/s/</loc>
+		<loc>https://mo-gami.com/s/</loc>
 		<lastmod>2026-03-01T14:09:29+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/sba/</loc>
+		<loc>https://mo-gami.com/en/sba/</loc>
 		<lastmod>2026-03-01T14:10:47+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/sba/</loc>
+		<loc>https://mo-gami.com/sba/</loc>
 		<lastmod>2026-03-01T14:11:19+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/mbt/</loc>
+		<loc>https://mo-gami.com/mbt/</loc>
 		<lastmod>2026-03-01T14:21:57+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/mbt/</loc>
+		<loc>https://mo-gami.com/en/mbt/</loc>
 		<lastmod>2026-03-01T14:22:12+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/pp/</loc>
+		<loc>https://mo-gami.com/en/pp/</loc>
 		<lastmod>2026-03-01T14:24:46+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/pp/</loc>
+		<loc>https://mo-gami.com/pp/</loc>
 		<lastmod>2026-03-01T14:25:48+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/bpa/</loc>
+		<loc>https://mo-gami.com/en/bpa/</loc>
 		<lastmod>2026-03-01T14:33:33+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/bpa/</loc>
+		<loc>https://mo-gami.com/bpa/</loc>
 		<lastmod>2026-03-01T14:36:43+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/cms/</loc>
+		<loc>https://mo-gami.com/en/cms/</loc>
 		<lastmod>2026-03-01T14:38:00+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/cms/</loc>
+		<loc>https://mo-gami.com/cms/</loc>
 		<lastmod>2026-03-01T14:39:23+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/cps/</loc>
+		<loc>https://mo-gami.com/en/cps/</loc>
 		<lastmod>2026-03-01T14:41:10+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/cps/</loc>
+		<loc>https://mo-gami.com/cps/</loc>
 		<lastmod>2026-03-01T14:42:04+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/cm/</loc>
+		<loc>https://mo-gami.com/en/cm/</loc>
 		<lastmod>2026-03-01T14:42:57+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/cm/</loc>
+		<loc>https://mo-gami.com/cm/</loc>
 		<lastmod>2026-03-01T14:43:30+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/ts/</loc>
+		<loc>https://mo-gami.com/en/ts/</loc>
 		<lastmod>2026-03-01T14:45:40+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/ts/</loc>
+		<loc>https://mo-gami.com/ts/</loc>
 		<lastmod>2026-03-01T14:46:39+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/r/</loc>
+		<loc>https://mo-gami.com/en/r/</loc>
 		<lastmod>2026-03-01T14:47:34+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/r/</loc>
+		<loc>https://mo-gami.com/r/</loc>
 		<lastmod>2026-03-01T14:49:55+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/dst/</loc>
+		<loc>https://mo-gami.com/en/dst/</loc>
 		<lastmod>2026-03-01T14:55:09+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/dst/</loc>
+		<loc>https://mo-gami.com/dst/</loc>
 		<lastmod>2026-03-01T14:55:56+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/mt/</loc>
+		<loc>https://mo-gami.com/en/mt/</loc>
 		<lastmod>2026-03-01T14:57:17+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/mt/</loc>
+		<loc>https://mo-gami.com/mt/</loc>
 		<lastmod>2026-03-01T14:58:43+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/tmp/</loc>
+		<loc>https://mo-gami.com/en/tmp/</loc>
 		<lastmod>2026-03-01T14:59:32+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/tmp/</loc>
+		<loc>https://mo-gami.com/tmp/</loc>
 		<lastmod>2026-03-01T15:01:11+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/lt/</loc>
+		<loc>https://mo-gami.com/en/lt/</loc>
 		<lastmod>2026-03-01T15:06:11+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/lt/</loc>
+		<loc>https://mo-gami.com/lt/</loc>
 		<lastmod>2026-03-01T15:09:00+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/drg/</loc>
+		<loc>https://mo-gami.com/en/drg/</loc>
 		<lastmod>2026-03-01T15:11:53+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/drg/</loc>
+		<loc>https://mo-gami.com/drg/</loc>
 		<lastmod>2026-03-01T15:12:54+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/dm/</loc>
+		<loc>https://mo-gami.com/en/dm/</loc>
 		<lastmod>2026-03-01T15:15:21+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/dm/</loc>
+		<loc>https://mo-gami.com/dm/</loc>
 		<lastmod>2026-03-01T15:17:10+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/vs/</loc>
+		<loc>https://mo-gami.com/en/vs/</loc>
 		<lastmod>2026-03-01T15:17:57+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/vs/</loc>
+		<loc>https://mo-gami.com/vs/</loc>
 		<lastmod>2026-03-01T15:18:29+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/mps/</loc>
+		<loc>https://mo-gami.com/en/mps/</loc>
 		<lastmod>2026-03-01T15:19:38+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/mps/</loc>
+		<loc>https://mo-gami.com/mps/</loc>
 		<lastmod>2026-03-01T15:20:20+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/en/fs/</loc>
+		<loc>https://mo-gami.com/en/fs/</loc>
 		<lastmod>2026-03-01T15:21:10+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>/fs/</loc>
+		<loc>https://mo-gami.com/fs/</loc>
 		<lastmod>2026-03-01T15:21:37+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
+			<image:loc>https://mo-gami.com/wp-content/uploads/2023/08/batman_joker1.jpg</image:loc>
 		</image:image>
 	</url>
 </urlset>
