@@ -336,6 +336,7 @@ Version: 1.0
                 padding-bottom: 15px;
                 margin: 0px 0px 0px 10px;
                 color: #3D3937;
+                /* color: #ffffff; */
                 cursor: pointer;
                 font-size: 12px;
             }
@@ -347,96 +348,19 @@ Version: 1.0
             p#breadcrumbs {
                 padding-bottom: 15px;
                 margin: 0px 0px 0px 10px;
-                color: #3D3937;
-                color: #C0C0C0;
+                /* color: #3D3937; */
+                /* color: #C0C0C0; */
+                color: #ffffff;
                 cursor: pointer;
                 font-size: 12px;
             }
 
             p#breadcrumbs span a  {
-                color: #C0C0C0;
+                /* color: #C0C0C0; */
+                color: #ffffff;
                 cursor: pointer;
             }
 
-    /* 検索バー */
-                 .searchbox {
-                    text-align: center;
-                    letter-spacing: 0;
-                    margin-bottom: 15px;
-                    margin: 0 auto;
-                    display: inline;
-                    line-height: 1.4em;
-                    width: 2.2em;
-                    height: 50px;
-                    box-shadow: none;
-                    font-family: Arial, Helvetica, sans-serif;
-                    overflow: hidden;
-                    background: thistle;
-                    background: white;
-                }
-    
-                input#submit.btn-submit {
-                    display: inline;
-                    background: url('https://mo-gami.com/wp-content/themes/mogami/img/icon-search2.png') no-repeat center center;
-                    border: none;
-                    text-indent: -9999px;
-                    box-shadow: none;
-                    width: 2.2em;
-                }
-    
-                .searchbox #s {
-                    width: 156px;
-                    width: 75%;
-                    border: none;
-                    line-height: 18px;
-                    background: none;
-                    padding: 6px 0px;
-    
-                }
-    
-                .searchbox div {
-                    display: inline-block;
-                    border: #CCC solid 1px;
-                    -webkit-border-radius: 14px;
-                    -moz-border-radius: 14px;
-                    border-radius: 14px;
-                    width: 204px;
-                    margin-bottom: 3px;
-                    overflow: hidden;
-                }
-
-            .nosearch-box {
-                text-align: left;
-                overflow: hidden;
-                width: 730px;
-                width: auto;
-                height: 270px;
-                border-left: none;
-                padding: 0px 10px 0px 10px;
-                padding: auto;
-                background: rgb(222, 135, 135);
-                background: white;
-            }
-
-            .nosearch1 {
-                font-size: 22px;
-                display: block;
-                margin-bottom: 30px;
-                height: auto;
-            }
-
-            .nosearch2 {
-                display: block;
-                height: auto;
-                margin-bottom: 10px;
-            }
-
-            .nosearch3 {
-                display: block;
-                float: left;
-                background-color: white;
-                width: auto;
-            }
 
             .post-meta {
                     font-size: 12px;
@@ -1743,3 +1667,244 @@ Version: 1.0
                 padding: 0px 0px;
                 border-left: solid 5px black;
             } 
+
+
+
+/* -----------------------------------------------------------
+   1. フロントページのみ有効にする設定
+----------------------------------------------------------- */
+
+/* 要素の非表示 */
+.home .g_translation, 
+.home .bogo-language-switcher, 
+.home .title2, 
+.home #header.container, 
+.home #header {
+    display: none !important;
+}
+
+/* ページ全体の基本設定 */
+body.home {
+    width: 100%; 
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    display: block; 
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+/* メインコンテンツエリア */
+.home #main.container {
+    width: 100%;
+    padding: 0;
+}
+
+.home .front-content-wrapper {
+    padding: 380px 0 30vh 0; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.home .mogami {
+    max-width: 250px;
+    height: auto;
+    display: block;
+    padding-left: 50px;
+}
+
+.home .language-selector {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding-right: 50px;
+}
+
+/* フッター設定 */
+.home #footer.container {
+    position: relative !important;
+    width: 100%; 
+    display: flex !important;
+    align-items: center; 
+    z-index: 9999;
+    padding: 0 0 100px 0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.home .footer-col {
+    flex: 1; 
+    display: flex;
+    align-items: center;
+}
+
+.home .col-left { visibility: hidden; }
+.home .col-center { justify-content: center; }
+.home .col-right { justify-content: flex-end; padding-right: 50px; }
+
+.home .copyright-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #3D3937;
+    white-space: nowrap;
+}
+
+.home .col-right a.twitter {
+    font-family: 'Dosis', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #515151;
+    text-decoration: underline;
+    line-height: 1 !important;
+    white-space: nowrap;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* -----------------------------------------------------------
+   1. 検索バー 本体のデザイン (PC基準を継承)
+----------------------------------------------------------- */
+
+/* 検索ボックスのコンテナ */
+.page .searchbox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* PCでは右寄せ */
+}
+
+/* 検索入力欄とボタンを包む丸い枠 */
+.page .searchbox div {
+    display: flex !important; /* 横並びを強制 */
+    align-items: center;
+    border: #CCC solid 1px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    border-radius: 14px;
+    width: 204px;
+    height: 32px; /* 高さを指定 */
+    margin-bottom: 3px;
+    overflow: hidden;
+    background: white;
+}
+
+/* 入力エリア */
+.page .searchbox #s {
+    width: 156px !important;
+    border: none !important;
+    line-height: 18px;
+    background: none !important;
+    padding: 4px 10px !important;
+    outline: none;
+    font-size: 13px;
+    flex-grow: 1;
+}
+
+/* 検索ボタン（虫眼鏡アイコン） */
+input.btn-submit {
+    display: inline;
+    background: url('/wp-content/themes/mogami/img/icon-search2.png') no-repeat center center;
+    border: none;
+    text-indent: -9999px;
+    box-shadow: none;
+    width: 2.2em;
+}
+
+/* --- (中略: nosearch設定) --- */
+
+/* -----------------------------------------------------------
+   2. 固定ページ：レイアウト共通・PC用
+----------------------------------------------------------- */
+
+.page .searchbox-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* -----------------------------------------------------------
+   3. 固定ページ：タブレット・スマホ用レイアウト (1024px以下)
+----------------------------------------------------------- */
+
+/* 検索バーとページネーションの配置入れ替え */
+.page .searchbox-wrapper {
+    flex-direction: column !important;
+    gap: 20px;
+}
+
+.page .searchbox {
+    order: 1;
+    justify-content: center !important; /* 中央寄せ */
+    width: 100% !important;
+}
+
+.page #pagination-top-links {
+    order: 2;
+    padding-left: 0 !important;
+    justify-content: center !important;
+}
+
+/* --- 追加：検索結果（縦並び）用の制御 --- */
+
+/* 検索実行時に隠す/出す制御 */
+#search-results-container {
+    display: none; /* 通常時は隠す */
+    width: 100%;
+    padding: 0 10px;
+}
+
+.is-searching #paginate-target { 
+    display: none !important; 
+}
+
+.is-searching #search-results-container { 
+    display: block !important; 
+}
+
+/* 検索ヒットした記事の縦並びスタイル */
+.search-result-item {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    text-align: left; /* テキストは左揃えを維持 */
+}
+
+/* 縦並び時、強制的に1カラムにする */
+.search-result-item .wp-block-column {
+    flex-basis: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-bottom: 20px;
+}
+
+/* 検索結果情報のバー */
+.search-info-bar {
+    font-size: 13px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 2px solid #333;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* -----------------------------------------------------------
+   4. ページナビ共通設定
+----------------------------------------------------------- */
+.page .custom-nav-inline {
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    gap: 8px;
+    justify-content: center !important;
+}
+
+.page .clickable-link { text-decoration: underline !important; color: #888; }
+.page .clickable-link.nav-arrow { color: #333; }
+.page .page-number.current { font-weight: bold; color: #333; }

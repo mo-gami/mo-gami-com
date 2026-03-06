@@ -377,7 +377,7 @@ Version: 1.0
     
                 input#submit.btn-submit {
                     display: inline;
-                    background: url('https://mo-gami.com/mo-gami.github.io/wp-content/themes/mogami/img/icon-search2.png') no-repeat center center;
+                    background: url('/mo-gami.github.io/wp-content/themes/mogami/img/icon-search2.png') no-repeat center center;
                     border: none;
                     text-indent: -9999px;
                     box-shadow: none;
