@@ -1826,6 +1826,7 @@ body.home {
         font-size: 1.1em;
         color: #3D3937;
         justify-content: center !important;
+        margin: 20px 0 !important;
     }
 
     .page .clickable-link, .search .clickable-link { text-decoration: underline !important;}

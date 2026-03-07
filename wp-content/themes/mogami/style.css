@@ -1884,7 +1884,7 @@ body.home {
 }
 
 .page #pagination-top-links { padding-left: 14px; }
-.page .bottom-nav { margin: 20px 0 10px 0; }
+.page .bottom-nav { margin: 20px 0 20px 0; }
 .page .clickable-link { text-decoration: underline !important;}
 /* .page .clickable-link.nav-arrow { color: #333; } */
 /* .page .page-number.current { font-weight: bold; color: #333; } */
