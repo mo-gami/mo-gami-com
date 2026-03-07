@@ -42,7 +42,7 @@
         <link rel="alternate" href="/en/en/" hreflang="en">
         <link rel="shortcut icon" href="/en/gitoqed/2023/08/icon-e1690992479203.jpg">
 
-        <link rel="stylesheet" href="/wp-content/themes/mogami/mobile.css?ver=1772826290" type="text/css" media="screen and (max-width:599px)">
+        <link rel="stylesheet" href="/wp-content/themes/mogami/mobile.css?ver=1772839412" type="text/css" media="screen and (max-width:599px)">
         <link rel="stylesheet" href="/wp-content/themes/mogami/tablet.css?ver=1772836598" type="text/css" media="screen and (min-width:600px) and (max-width:1024px)">
         <link rel="stylesheet" href="/wp-content/themes/mogami/style.css?ver=1772836497" type="text/css" media="screen and (min-width:1025px)">
         <link rel="stylesheet" href="/wp-content/themes/mogami/menu.css?ver=1701262655" type="text/css" media="screen and (max-width:1024px)">
@@ -241,11 +241,9 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <div id="main" class="container">
     <section id="posts">
                     <div class="post">
-                
                                     <div class="post-header">
                         <div class="searchbox-wrapper">
                             <div id="pagination-top-links" class="custom-nav-inline"></div>
-                            
                             <div class="searchbox clearfix">
                                 <form role="search" class="searchform" id="customSearchForm" onsubmit="return false;">
                                     <div>
@@ -255,14 +253,6 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                                 </form>
                             </div>
                         </div>
-                    </div>
-
-                    <div id="search-results-container">
-                        <div class="search-info-bar">
-                            <span id="search-word-display"></span>
-                            <a href="javascript:void(0)" id="close-search" style="float:right; text-decoration:underline;">Close</a>
-                        </div>
-                        <div id="search-list"></div>
                     </div>
                 
                 <div class="post-content" id="paginate-target">
@@ -495,10 +485,8 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
 
 --></p>
-                    
                                             <div id="pagination-bottom-links" class="custom-nav-inline bottom-nav"></div>
-                                        
-                    <p id="breadcrumbs"><span><span><a href="/en/">mogami</a></span> &gt; <span class="breadcrumb_last" aria-current="page">Paper Models</span></span></p>                </div> 
+                                    </div> 
             </div>                
                       
     </section>
@@ -596,115 +584,45 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 </div></div>
 
 <script>
-/**
- * 多言語ページ維持機能付き JavaScript ロジック
- */
 document.addEventListener('DOMContentLoaded', function() {
-    // 言語判定
-    const isEn = document.documentElement.lang.includes('en') || window.location.pathname.includes('/en/');
-    
-    const uiText = {
-        notFound: isEn ? "Not found." : "見つかりませんでした。",
-        results: isEn ? "Results: " : "検索結果: ",
-        close: isEn ? "Close" : "閉じる"
-    };
-
+    const allData = [{"key":"one-handedkakeyaandpowerfulpaperrolls","url":"\/en\/kakeya-and-paperroll\/"},{"key":"papermodelsaslearningsupporttools\uff5ecolourfulfruits\uff5e","url":"\/en\/irodori-kudamono\/"},{"key":"retorobox\u2170","url":"\/en\/retoro-box-1\/"},{"key":"businesscardcase","url":"\/en\/business-card-case\/"},{"key":"tsunagu","url":"\/en\/tsunagu\/"},{"key":"memorabletoys(mr.brown)","url":"\/en\/mr-brown\/"},{"key":"fakebookboxes|poems\u2170-atypebox","url":"\/en\/fbb-poems-i-a\/"},{"key":"fakebookboxes|holbein\u2170-atypebox","url":"\/en\/fbb-holbein-i-a\/"},{"key":"fakebookboxes|winered\u2170-atypebox","url":"\/en\/fbb-wr-i-a\/"},{"key":"fakebookboxes|navyblue\u2170-atypebox","url":"\/en\/fbb-nb-i-a\/"},{"key":"grookey","url":"\/en\/grookey\/"},{"key":"cannedjuice","url":"\/en\/canjuice\/"},{"key":"crowncorks","url":"\/en\/crown-corks\/"},{"key":"crystal","url":"\/en\/crystal\/"},{"key":"oildrums","url":"\/en\/oil-drums\/"},{"key":"hocotateship","url":"\/en\/hocotate-ship\/"},{"key":"thejoker(bust)","url":"\/en\/the-joker-2008\/"},{"key":"morganacar","url":"\/en\/morganacar\/"},{"key":"joker","url":"\/en\/joker\/"}];
     const itemsPerPage = 18; 
     const targetContainer = document.getElementById('paginate-target');
-    const searchList = document.getElementById('search-list');
     const searchInp = document.getElementById('s');
-    const closeBtn = document.getElementById('close-search');
-    
     if (!targetContainer || !searchInp) return;
-    if (closeBtn) closeBtn.innerText = uiText.close;
 
-    // データ収集
     const columns = Array.from(targetContainer.querySelectorAll('.wp-block-column'));
     if (columns.length === 0) return;
-
     const totalPages = Math.ceil(columns.length / itemsPerPage);
 
-    const productData = columns.map(col => {
-        const link = col.querySelector('a');
-        return {
-            title: col.innerText.toLowerCase().trim(),
-            url: link ? link.href : null,
-            html: col.innerHTML
-        };
-    });
+    // URLごとに保存キーを分離
+    const pageKey = 'last_page_' + window.location.pathname;
 
-    /**
-     * ページ番号を取得（URLハッシュ > セッションストレージ > デフォルト1）
-     */
     function getStoredPage() {
+        // 直接URLにハッシュがある場合は最優先
         const hash = window.location.hash;
-        if (hash && hash.startsWith('#page-')) {
-            return parseInt(hash.replace('#page-', '')) || 1;
-        }
-        // Bogo等での言語切り替え時にハッシュが消えるため、sessionStorageから復元
-        const savedPage = sessionStorage.getItem('last_page_num');
+        if (hash && hash.startsWith('#page-')) return parseInt(hash.replace('#page-', '')) || 1;
+        
+        // そのURLで以前にいたページ番号をストレージから取得（なければ1）
+        const savedPage = sessionStorage.getItem(pageKey);
         return savedPage ? parseInt(savedPage) : 1;
     }
-
     let currentPage = getStoredPage();
 
     /**
-     * ページ表示処理
+     * 言語切り替えリンク（Bogo）だけにハッシュを付加する
+     * これにより、通常のナビゲーションやメニューにはハッシュが飛ばないようになる
      */
-    function showPage(page, scroll = true) {
-        if (document.body.classList.contains('is-searching')) return;
-        if (page < 1) page = 1;
-        if (page > totalPages) page = totalPages;
-        currentPage = page;
-        
-        // 状態の保存
-        history.replaceState(null, null, '#page-' + page);
-        sessionStorage.setItem('last_page_num', page);
-
-        // 要素の表示切り替え
-        columns.forEach((col, index) => {
-            const start = (page - 1) * itemsPerPage;
-            const end = start + itemsPerPage;
-            col.style.display = (index >= start && index < end) ? '' : 'none';
-        });
-
-        const parentRows = Array.from(targetContainer.querySelectorAll('.wp-block-columns'));
-        parentRows.forEach(row => {
-            const visibleChild = Array.from(row.querySelectorAll('.wp-block-column')).filter(c => c.style.display !== 'none');
-            row.style.display = (visibleChild.length > 0) ? 'flex' : 'none';
-        });
-
-        updateNav();
-        // スムーズスクロール（初期読み込み時は無効）
-        if(scroll && page > 0) window.scrollTo({top: 0, behavior: 'smooth'}); 
-    }
-
-    /**
-     * ナビゲーション生成
-     */
-    function updateNav() {
-        const containers = [document.getElementById('pagination-top-links'), document.getElementById('pagination-bottom-links')];
-        containers.forEach(container => {
-            if (!container) return;
-            container.innerHTML = '';
-            if (totalPages <= 1) return;
-            
-            if (currentPage > 1) {
-                appendLink(container, "<<", "nav-arrow clickable-link", () => showPage(1));
-                appendLink(container, "<", "nav-arrow clickable-link", () => showPage(currentPage - 1));
-                appendLink(container, currentPage - 1, "page-number clickable-link", () => showPage(currentPage - 1));
-            }
-
-            const currentSpan = document.createElement('span');
-            currentSpan.className = "page-number current";
-            currentSpan.innerText = currentPage;
-            container.appendChild(currentSpan);
-
-            if (currentPage < totalPages) {
-                appendLink(container, currentPage + 1, "page-number clickable-link", () => showPage(currentPage + 1));
-                appendLink(container, ">", "nav-arrow clickable-link", () => showPage(currentPage + 1));
-                appendLink(container, ">>", "nav-arrow clickable-link", () => showPage(totalPages));
-            }
+    function syncLanguageLinks(page) {
+        // Bogoのスイッチャー要素に含まれるリンクのみを抽出
+        const bogoLinks = document.querySelectorAll('.bogo-language-switcher a, .menu-item-bogo-language-switcher a');
+        bogoLinks.forEach(link => {
+            try {
+                let url = new URL(link.href);
+                // 言語切り替えURLにのみ #page-n をセット
+                url.hash = 'page-' + page;
+                link.href = url.toString();
+            } catch(e) {}
         });
     }
 
@@ -717,53 +635,70 @@ document.addEventListener('DOMContentLoaded', function() {
         parent.appendChild(a);
     }
 
-    /**
-     * 検索・ダイレクトジャンプ実行
-     */
-    function executeSearch() {
-        const val = searchInp.value.trim().toLowerCase();
-        if (!val) {
-            resetSearch();
-            return;
-        }
+    function updateNav() {
+        const containers = [document.getElementById('pagination-top-links'), document.getElementById('pagination-bottom-links')];
+        containers.forEach(container => {
+            if (!container) return;
+            container.innerHTML = '';
+            if (totalPages <= 1) return;
+            
+            if (currentPage > 1) {
+                appendLink(container, "<<", "nav-arrow clickable-link", () => showPage(1));
+                appendLink(container, "<", "nav-arrow clickable-link", () => showPage(currentPage - 1));
+                appendLink(container, currentPage - 1, "page-number clickable-link", () => showPage(currentPage - 1));
+            }
+            const currentSpan = document.createElement('span');
+            currentSpan.className = "page-number current";
+            currentSpan.innerText = currentPage;
+            container.appendChild(currentSpan);
+            if (currentPage < totalPages) {
+                appendLink(container, currentPage + 1, "page-number clickable-link", () => showPage(currentPage + 1));
+                appendLink(container, ">", "nav-arrow clickable-link", () => showPage(currentPage + 1));
+                appendLink(container, ">>", "nav-arrow clickable-link", () => showPage(totalPages));
+            }
+        });
+    }
 
-        const match = productData.find(p => p.title === val) || 
-                      productData.find(p => p.title.includes(val));
+    function showPage(page, scroll = true) {
+        if (page < 1) page = 1; if (page > totalPages) page = totalPages;
+        currentPage = page;
+        
+        // URLバーのハッシュを書き換える（現在のページ内）
+        history.replaceState(null, null, '#page-' + page);
+        // このURL専用の保存
+        sessionStorage.setItem(pageKey, page);
+        
+        // 言語スイッチャーのリンク先だけを書き換える
+        syncLanguageLinks(page);
+        
+        columns.forEach((col, index) => {
+            const start = (page - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            col.style.display = (index >= start && index < end) ? '' : 'none';
+        });
 
+        targetContainer.querySelectorAll('.wp-block-columns').forEach(row => {
+            const visibleChild = Array.from(row.querySelectorAll('.wp-block-column')).filter(c => c.style.display !== 'none');
+            row.style.display = (visibleChild.length > 0) ? 'flex' : 'none';
+        });
+
+        updateNav();
+        if(scroll) window.scrollTo({top: 0, behavior: 'smooth'}); 
+    }
+
+    document.getElementById('customSearchForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const val = searchInp.value.trim().toLowerCase().replace(/\s+/g, '');
+        if (!val) return;
+        const match = allData.find(item => item.key.includes(val));
         if (match && match.url) {
             window.location.href = match.url;
-            return;
-        }
-
-        const matches = productData.filter(p => p.title.includes(val));
-
-        if (matches.length > 0) {
-            document.body.classList.add('is-searching');
-            document.getElementById('search-word-display').innerText = uiText.results + `"${val}" (${matches.length})`;
-            searchList.innerHTML = matches.map(item => `<div class="search-result-item">${item.html}</div>`).join('');
-            window.scrollTo({top: 0, behavior: 'smooth'});
         } else {
-            alert(uiText.notFound);
+            const isEn = true;
+            alert(isEn ? "No results.\n(*Search is limited to posts listed here.)" : "見つかりませんでした。\n（※この検索はここに表示されているコンテンツに限定されています。）");
         }
-    }
-
-    function resetSearch() {
-        document.body.classList.remove('is-searching');
-        searchInp.value = '';
-        showPage(currentPage, false);
-    }
-
-    // イベント設定
-    searchInp.addEventListener('keypress', (e) => { if (e.key === 'Enter') executeSearch(); });
-    const submitBtn = document.getElementById('customSearchForm').querySelector('.btn-submit');
-    if(submitBtn) submitBtn.addEventListener('click', executeSearch);
-    
-    if(closeBtn) closeBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        resetSearch();
     });
 
-    // 初期実行（スクロールなし）
     showPage(currentPage, false);
 });
 </script>
